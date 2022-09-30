@@ -1,0 +1,19 @@
+Difference bwtween document and Window object
+
+
+	Document :
+		
+		1. It is the top most object and outermost element of the object hierarchy
+		
+		2. Document object is property of window object that points to the DOM document loaded in that window
+
+		3. The document object represent a web page that is loaded in the browser
+
+
+	Window Object :
+
+		1. Each HTML document that gets loaded into a window becomes a document object
+
+		2. The window object represents a window/tab containing a DOM document
+
+		3. It represents a browser window or frame that displays the contents of the webpage
