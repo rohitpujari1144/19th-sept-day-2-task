@@ -1,0 +1,194 @@
+Difference between document and object model:
+
+
+1. Document Object:
+	The document object represent a web page that is loaded in the browser. By accessing the document object, we can access the element in the HTML page. With the help of document objects, we can add dynamic content to our web page. The document object can be accessed with a window.document or just document.
+- It represents any HTML document or web page that is loaded in the browser.
+- It is loaded inside the window.
+- It is the object of window property.
+- All the tags, elements with attributes in HTML are part of the document.
+- We can access the document from a window using the window. document.
+- The document is part of BOM (browser object model) and dom (Document object model).
+- Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title
+- example: document.title :  will return the title of the document
+
+Syntax:
+	document.property_name;
+
+Properties of document:
+1. activeElement: It returns the currently active elements in the document.
+2. body: It returns the contents of the body element.
+3. anchors: It returns all <a> elements that have a name attribute.
+4. baseURI: It returns a string value that represents the base URI of the document.
+5. cookie: It returns the cookie of the current document.
+6. charSet: It returns a string, representing the document’s character encoding.
+7. defaultView: It returns the current Window Object.
+8. designMode: It is used to set documents as editable or read-only.
+9. domain: It returns the domain name of the document server.
+10. doctype: It returns the document’s doctype.
+11. embeds: It returns the collection of all embedded elements.
+12. URL: It returns the complete URL of the document.
+13. forms: It returns all the elements of the form.
+14. fullScreenElement: It returns the element that is currently present in full-screen mode.
+15. title: It returns the title element of the document.
+16. head: It returns the head element of the document.
+17. links: It returns all <area> and <a> elements that have a href attribute.
+18. lastModified: It returns the date and time of the current document that was last modified.
+19. images: It returns the collection of <img> elements in the document.
+20. implementation: It returns the DOMImplementation object associated with the current document.
+21. readyState: It returns the loading status of the current document.
+22. referrer: It returns the URI of the page that is linked to the current page.
+23. scripts: It returns all script elements present in the document.
+24. strictErrorChecking: It sets or returns whether strict error checking can be enforced on a document or not.
+
+Methods of Document:
+
+Syntax:
+	document.method_name;
+
+The lists of most commonly used methods are listed below:
+
+1. addEventListener(): It is used to attach an event handler to the specified element.
+2. adoptNode(): It is used to adopt a node from another document and it returns a node object, representing the adopted node.
+3. close(): It is used to close the output stream.
+4. createAttribute(): It is used to create an attribute node with the specified name and returns the attribute object.
+5. createComment(): It is used to create a comment node with some text.
+6. createDocumentFragment(): It is used to create the document fragment to change the content of the document.
+7. createElement(): It is used to create HTML element .
+8. createEvent(): It is used to create a new events object.
+9. createTextNode(): It is used to create a textnode.
+10. execCommand(): It is used to execute a command specified by the user on the editable selected section. It returns a Boolean value.
+11. fullscreenEnabled(): It is used to check whether the document can be viewed in fullscreen mode or not. It returns a boolean value.
+12. getElementById(): It returns the object of the given ID. If no object with that id exists then it returns null.
+13. getElementsByClassName(): It returns an object containing all the elements with the specified class names in the document as objects.
+14. getElementsByName(): It returns an object containing all the elements with the specified name in the document as objects.
+15. getElementsByTagName(): It returns an object containing all the elements with the specified tag names in the document as objects.
+16. hasFocus(): It returns a boolean value that indicates whether the document or element has focus or not.
+17. importNode(): It imports the copy of a node from another document in the current document.
+18. normalize(): It flushes out the empty nodes and merges the adjacent text nodes with the first text node and
+19. normalizeDocument(): It is used to normalize an HTML document by removing any empty text nodes and joining the adjacent text nodes.
+20. open(): It is used to open the output stream to collect the output.
+21. querySelector(): It returns the first element that matches a specified CSS selector(s) in the document.
+22. querySelectorAll(): It returns a collection of an element’s child elements that matches a specified CSS selector(s) in the document
+23. removeEventListener(): It removes the event handler from an element that has an attached event.
+24. renameNode(): It is used to rename the node.
+25. write(): It is used to write some content or javascript code in the document.
+26. writeln(): It is used to write a document with a newline character after each statement.
+
+
+2. Window Object: 
+	The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+- It represents a browser window or frame that displays the contents of the webpage.   
+- It is the very first object that is loaded in the browser.
+- It is the object of the browser.
+- Global objects, functions, and variables of JavaScript are members of the window object.
+- We can access the window from the window only. i.e. window.window
+- The window is part of BOM, not DOM.
+- Properties of the window object cannot be accessed by the document object.
+- example: window.innerHeight : will return the height of the content area of the browser
+
+
+Syntax:
+	window.property_name;
+
+Properties of the window:
+1. Closed: It holds a Boolean value that represents whether the window is closed or not.
+2. console: It returns a reference to the console object which provides access to the browser’s debugging console.
+3. defaultStatus: It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.
+4. controllers: It returns the XUL controller objects for the current Chrome window.
+5. customElements: It returns a reference to the CustomElementRegistry object, which can be used to register new custom elements and also get information about already registered custom 
+   elements.
+6. crypto: It returns the browser crypto object.
+7. devicePixelRatio: It returns the ratio between physical pixels and device-independent pixels in the current display.
+8. Document: It returns a reference to the document object of that window.
+9. DOMMatrix: It returns a reference to a DOMMatrix object, which represents 4×4 matrices, suitable for 2D and 3D operations.
+10. frames[]: It represents an array that contains all the frames of a given window.
+11. DOMPoint: It returns a reference to a DOMPoint object, which represents a 2D or 3D point in a coordinate system.
+12. History: It provides information on the URLs visited in the current window.
+13. Length: It represents the number of frames in the current window.
+14. DOMRect: It returns a reference to a DOMRect object, which represents a rectangle.
+15. fullScreen: This property indicates whether the window is displayed on full screen or not.
+16. Location: It contains the URL of the current window.
+17. innerHeight: It is used to get the height of the content area of the browser window.
+18. innerWidth: It is used to get the width of the content area of the browser window.
+19. Name: It contains the name of the referenced window.
+20. Window: It returns the current window or frame.
+21. Navigator: It returns a reference to the navigator object.
+22. outerHeight: It will get the height of the outside of the browser window.
+23. outerWidth: It will get the width of the outside of the browser window.
+24. Status: It overrides the default status and places a message in the status bar.
+25. Top: It returns a reference to the topmost window containing a frame if many windows are opened.
+26. Toolbar: It will result in the toolbar object, whose visibility can be toggled in the window.
+27. Opener: It contains a reference to the window that opened the current window.
+28. Parent: It refers to the frameset in which the current frame is contained.
+29. Screen: It refers to the screen object
+30. Self: It provides another way to refer to the current window.
+
+Methods of Window:
+
+Syntax:
+	window.method_name;
+
+1. alert(): It is used to display an alert box. It displays a specified message along with an OK button and is generally used to make sure that the information comes through the user.
+2. atob(): It is used for decoding a base-64 encoded string. It is used to decode a string of data that has been encoded using the btoa() method.
+3. blur(): It is used to remove focus from the current window.
+4. btoa(): It is used for encoding a string in base-64 format.
+4. clearInterval(): It clears the interval which has been set by the setInterval() function before that.
+6. clearTimeout(): It clears the timeout which has been set by the setTimeout()function before that.
+7. close(): It is used for closing a certain window or tab of the browser which was previously opened.
+8. confirm(): It is used to display a modal dialog with an optional message and two buttons i.e. OK and Cancel. It returns true if the user clicks “OK”, and false otherwise.
+9. focus(): It is used to give focus to an element in the current window.
+10. getComputedStyle(): It is used to get all the computed CSS properties and values of the specified element.
+11. getSelection(): It returns a Selection object representing the range of text selected by the user
+12. matchMedia(): It is used to return a MediaQueryList object which represents the result of the specified CSS media query string.
+13. open(): It is used to open a new tab or window with the specified URL and name.
+14. moveBy(): It is used for moving a window with a specified number of pixels relative to its current coordinates.
+15. moveTo(): It is used in the window to move the window from the left and top coordinates.
+16. prompt(): It is used to display a dialog with an optional message prompting the user to input some text
+17. resizeBy(): It is used to resize a window by the specified amount.
+18. resizeTo(): It is used to resize a window to the specified width and height.
+19. scrollBy(): It is used to scroll the document by the given number of pixels.
+20. scrollTo(): It is used to scroll to a particular set of coordinates in the document.
+21. setInterval(): It repeats a given function at every given time interval.
+22. setTimeout(): It executes a function, after waiting a specified number of milliseconds.
+23. stop(): It is used to stop the window from loading resources in the current browsing context.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
