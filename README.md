@@ -1,1 +1,1 @@
-# Difference between document and Window object
+# Difference between document and window object
